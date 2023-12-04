@@ -11,11 +11,6 @@
         android:label="fragment_quran"
         tools:layout="@layout/fragment_quran"/>
     <fragment
-        android:id="@+id/nav_doa"
-        android:name="com.kia.quranapp.presentation.doa.DoaFragment"
-        android:label="fragment_doa"
-        tools:layout="@layout/fragment_doa"/>
-    <fragment
         android:id="@+id/nav_adzan"
         android:name="com.kia.quranapp.presentation.adzan.AdzanFragment"
         android:label="fragment_adzan"

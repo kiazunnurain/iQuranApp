@@ -5,10 +5,6 @@
         android:icon="@drawable/logo_quran"
         android:title="@string/quran"/>
     <item
-        android:id="@+id/nav_doa"
-        android:icon="@drawable/ic_doa"
-        android:title="@string/doa"/>
-    <item
         android:id="@+id/nav_adzan"
         android:icon="@drawable/ic_adzan"
         android:title="@string/adzan"/>

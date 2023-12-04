@@ -2,8 +2,12 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.QuranApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         <item name="colorPrimary">#003545</item>
     </style>
 
     <style name="Theme.QuranApp" parent="Base.Theme.QuranApp" />
+    
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/rounded_corner</item>
+    </style>
 </resources>

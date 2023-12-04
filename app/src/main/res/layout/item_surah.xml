@@ -61,6 +61,4 @@
             app:layout_constraintStart_toStartOf="@id/tv_surah"
             app:layout_constraintTop_toBottomOf="@id/tv_surah"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
-    
-
 </com.google.android.material.card.MaterialCardView>

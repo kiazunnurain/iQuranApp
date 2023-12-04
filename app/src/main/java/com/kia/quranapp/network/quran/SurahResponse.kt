@@ -5,33 +5,34 @@ import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
 data class SurahResponse(
-    @Json(name = "code")
+    @Json(name="code")
     val code: Int? = null,
 
-    @Json(name = "data")
-    val listSurah: List<SurahItem>? = null,
+    @Json(name="data")
+    val listSurah: List<SurahItem>,
 
-    @Json(name = "status")
+    @Json(name="status")
     val status: String? = null
 )
 
 @JsonClass(generateAdapter = true)
 data class SurahItem(
-    @Json(name = "number")
+
+    @Json(name="number")
     val number: Int? = null,
 
-    @Json(name = "englishName")
+    @Json(name="englishName")
     val englishName: String? = null,
 
-    @Json(name = "numberOfAyahs")
+    @Json(name="numberOfAyahs")
     val numberOfAyahs: Int? = null,
 
-    @Json(name = "revelationType")
+    @Json(name="revelationType")
     val revelationType: String? = null,
 
-    @Json(name = "name")
+    @Json(name="name")
     val name: String? = null,
 
-    @Json(name = "englishNameTranslation")
+    @Json(name="englishNameTranslation")
     val englishNameTranslation: String? = null
 )

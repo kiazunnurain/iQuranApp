@@ -9,14 +9,14 @@ data class AyahResponse(
     val code: Int? = null,
 
     @Json(name = "data")
-    val quranEdition: List<QuranEdition>? = null,
+    val quranEdition: List<QuranEditionItem>,
 
     @Json(name = "status")
     val status: String? = null
 )
 
 @JsonClass(generateAdapter = true)
-data class QuranEdition(
+data class QuranEditionItem(
     @Json(name = "number")
     val number: Int? = null,
 
@@ -36,10 +36,7 @@ data class QuranEdition(
     val numberOfAyahs: Int? = null,
 
     @Json(name = "ayahs")
-    val listAyahs: List<AyahsItem>? = null,
-
-    @Json(name = "edition")
-    val edition: Edition? = null
+    val listAyahs: List<AyahsItem>
 )
 
 @JsonClass(generateAdapter = true)
@@ -47,23 +44,8 @@ data class AyahsItem(
     @Json(name = "number")
     val number: Int? = null,
 
-    @Json(name = "hizbNumber")
-    val hizbNumber: Int? = null,
-
-    @Json(name = "ruku")
-    val ruku: Int? = null,
-
-    @Json(name = "manzil")
-    val manzil: Int? = null,
-
     @Json(name = "text")
     val text: String? = null,
-
-    @Json(name = "page")
-    val page: Int? = null,
-
-    @Json(name = "sajda")
-    val sajda: Boolean? = null,
 
     @Json(name = "numberInSurah")
     val numberInSurah: Int? = null,
@@ -71,34 +53,8 @@ data class AyahsItem(
     @Json(name = "juz")
     val juz: Int? = null,
 
-    @Json(name = "audioSecondary")
-    val audioSecondary: List<String?>? = null,
-
     @Json(name = "audio")
     val audio: String? = null
 )
 
-@JsonClass(generateAdapter = true)
-data class Edition(
-    @Json(name = "identifier")
-    val identifier: String? = null,
-
-    @Json(name = "englishName")
-    val englishName: String? = null,
-
-    @Json(name = "name")
-    val name: String? = null,
-
-    @Json(name = "format")
-    val format: String? = null,
-
-    @Json(name = "language")
-    val language: String? = null,
-
-    @Json(name = "type")
-    val type: String? = null,
-
-    @Json(name = "direction")
-    val direction: String? = null
-)
 

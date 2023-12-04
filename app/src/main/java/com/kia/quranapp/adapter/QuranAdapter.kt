@@ -1,17 +1,20 @@
 package com.kia.quranapp.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.kia.quranapp.databinding.ItemSurahBinding
+import com.kia.quranapp.network.quran.Surah
 import com.kia.quranapp.network.quran.SurahItem
+import com.kia.quranapp.presentation.quran.DetailSurahActivity
 
-class QuranAdapter : RecyclerView.Adapter<QuranAdapter.SurahViewHolder>(){
+class QuranAdapter : RecyclerView.Adapter<QuranAdapter.SurahViewHolder>() {
     class SurahViewHolder(val binding: ItemSurahBinding) : RecyclerView.ViewHolder(binding.root)
 
-    private val listSurah = ArrayList<SurahItem>()
+    private val listSurah = ArrayList<Surah>()
 
-    fun setData(list: List<SurahItem>?){
+    fun setData(list: List<Surah>?) {
         if (list == null) return
         listSurah.clear()
         listSurah.addAll(list)
@@ -26,7 +29,7 @@ class QuranAdapter : RecyclerView.Adapter<QuranAdapter.SurahViewHolder>(){
 
     override fun getItemCount() = listSurah.size
 
-    override fun onBindViewHolder(holder: QuranAdapter.SurahViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: SurahViewHolder, position: Int) {
         val data = listSurah[position]
         holder.binding.apply {
             tvSurah.text = data.englishName
@@ -36,7 +39,12 @@ class QuranAdapter : RecyclerView.Adapter<QuranAdapter.SurahViewHolder>(){
             tvAyah.text = resultOfAyah
             tvName.text = data.name
             tvNumber.text = data.number.toString()
-        }
 
+            this.root.setOnClickListener {
+                val intent = Intent(it.context, DetailSurahActivity::class.java)
+                intent.putExtra(DetailSurahActivity.EXTRA_DATA, data)
+                it.context.startActivity(intent)
+            }
+        }
     }
 }

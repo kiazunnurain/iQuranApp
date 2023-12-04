@@ -1,5 +1,6 @@
 package com.kia.quranapp.network
 
+import com.kia.quranapp.network.adzan.AdzanApiService
 import com.kia.quranapp.network.quran.QuranApiService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -21,7 +22,11 @@ object ApiConfig {
         return retrofit.create(T::class.java)
     }
 
-    val getQuranService = createService<QuranApiService>("https://api.alquran.cloud/v1/")
+    val getQuranService = createService<QuranApiService>(
+        "https://api.alquran.cloud/v1/"
+    )
 
-
+    val getAdzanTimeService = createService<AdzanApiService>(
+        "https://api.myquran.com/v1/"
+    )
 }
