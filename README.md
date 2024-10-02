@@ -1,20 +1,25 @@
-![App Banner](https://cdn.dribbble.com/userupload/11742519/file/original-3fe55f03bdd4530e2a68d9c0a7e3981f.png?resize=2048x1451)
 # iQuran: Your Digital Qur'an Companion
-iQuran is a digital Qur'an application that facilitates understanding, reflection, and inspiration from the Qur'an. It offers a collection of surahs with translations, audio assistance for recitation, and prayer time reminders to enhance your worship experience.
+🌟 Elevate your spirituality with iQuran. Fueled by **Kotlin**, and powered by **QuranApi** – your all-in-one guide to precise prayer times, immersive Quranic audio, translations, and more. 🌙📖
+
+![App Banner](https://cdn.dribbble.com/userupload/11742519/file/original-3fe55f03bdd4530e2a68d9c0a7e3981f.png?resize=2048x1451)
+
+## 📝 Description
+iQuran is a digital Qur'an application designed to help users understand, reflect on, and draw inspiration from the Qur'an. With a collection of surahs, translations, immersive audio, and prayer time reminders, this app enhances the spiritual experience. iQuran is powered by QuranApi, offering users access to accurate prayer times and seamless integration of Qur'anic content.
 
 ## 💡 Features
 
-- Collection of surahs with translations.
-- Audio assistance for recitation.
-- Prayer time reminders.
-- User-friendly interface for easy navigation.
+- **Surahs with Translations:** Access a complete collection of surahs with translations to enhance understanding.
+- **Audio Assistance:** Listen to Qur'anic recitations with easy-to-use audio controls.
+- **Prayer Time Reminders:** Stay connected with timely reminders for each prayer.
+- **Powered by QuranApi:** Accurate prayer times and integrated Quranic data for a seamless experience.
+- **User-friendly Interface:** Simple and intuitive design for easy navigation.
 
 
 ##  💻 Tech Stack:
 
-- Figma
-- Kotlin
-- Android Studio
+- **Kotlin:** For building the Android app.
+- **Android Studio:** Development environment.
+- **QuranApi:** Provides access to Quranic content and prayer times.
 
 
 ##  🛠️ Installation
