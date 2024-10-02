@@ -4,7 +4,7 @@
 
 ![App Banner](https://cdn.dribbble.com/userupload/11742519/file/original-3fe55f03bdd4530e2a68d9c0a7e3981f.png?resize=2048x1451)
 
-## 📝 Description
+## 📝 Description:
 iQuran is a digital Qur'an application designed to help users understand, reflect on, and draw inspiration from the Qur'an. With a collection of surahs, translations, immersive audio, and prayer time reminders, this app enhances the spiritual experience. iQuran is powered by QuranApi, offering users access to accurate prayer times and seamless integration of Qur'anic content.
 
 ## 💡 Features
@@ -16,7 +16,7 @@ iQuran is a digital Qur'an application designed to help users understand, reflec
 - **User-friendly Interface:** Simple and intuitive design for easy navigation.
 
 
-##  💻 Tech Stack:
+##  💻 Tech Stack
 
 - **Kotlin:** For building the Android app.
 - **Android Studio:** Development environment.
