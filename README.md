@@ -1,6 +1,7 @@
 # iQuran: Your Digital Qur'an Companion
 🌟 Elevate your spirituality with iQuran. Fueled by **Kotlin**, and powered by **QuranApi** – your all-in-one guide to precise prayer times, immersive Quranic audio, translations, and more. 🌙📖
 
+
 ![App Banner](https://cdn.dribbble.com/userupload/11742519/file/original-3fe55f03bdd4530e2a68d9c0a7e3981f.png?resize=2048x1451)
 
 ## 📝 Description
